@@ -1,0 +1,35 @@
+@import url("https://fonts.cdnfonts.com/css/chomsky");
+body {
+  font-family: Arial, sans-serif;
+}
+.header {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+.header .date {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 14px;
+  color: #666;
+}
+.header .logo {
+  font-family: "Chomsky", Times, serif;
+  font-size: 36px;
+  color: #333;
+  text-decoration: none;
+}
+.header .dow {
+  font-size: 14px;
+  color: green;
+}
+.nav-link {
+  color: #000;
+  font-size: 14px;
+}
+.nav-link:hover {
+  text-decoration: underline;
+}
+.navbar {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
