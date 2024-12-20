@@ -50,10 +50,16 @@ const Navbar = () => {
                 </Link>
               </li>
               <li className="nav-item">
+                <Link className="nav-link" to="/covid">
+                  Covid
+                </Link>
+              </li>
+              <li className="nav-item">
                 <Link className="nav-link" to="/saved">
                   Saved
                 </Link>
               </li>
+
               <li className="nav-item">
                 <Link className="nav-link" to="/search">
                   Search

@@ -4,23 +4,22 @@ import { fetchNews } from "../redux/newsSlice";
 import NewsCard from "../components/NewsCard";
 import StatusIndicator from "../components/StatusIndicator";
 
-const Home = () => {
+const Covid = () => {
   const dispatch = useDispatch();
   const { articles, loading, error } = useSelector((state) => state.news);
 
   useEffect(() => {
-    dispatch(fetchNews({ query: "election", fq: 'glocations:("Indonesia")' }));
+    dispatch(fetchNews({ query: "covid", fq: "" })); // Berita global
   }, [dispatch]);
-
-  // if (loading) return <p>Loading...</p>;
-  // if (error) return <p>Error: {error}</p>;
   if (loading || error) {
     return <StatusIndicator loading={loading} error={error} />;
   }
 
   return (
     <div className="container">
-      <div className=" d-flex flex-row">
+      <h1 className="text-center">Covid</h1>
+      <hr />
+      <div className="d-flex flex-row">
         <article style={{ width: "100%" }}>
           {articles.map((article) => (
             <NewsCard key={article._id} article={article} />
@@ -31,4 +30,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Covid;

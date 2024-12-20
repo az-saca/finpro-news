@@ -26,21 +26,11 @@ const Programming = () => {
       <h1 className="text-center">Programming</h1>
       <hr />
       <div className="d-flex flex-row">
-        <article style={{ width: "70%" }}>
+        <article style={{ width: "100%" }}>
           {articles.map((article) => (
             <NewsCard key={article._id} article={article} />
           ))}
         </article>
-        <aside style={{ width: "30%" }}>
-          <h2>Aside</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-            voluptates, quae, quod, doloremque voluptatum quidem quia nemo
-            temporibus quibusdam officia quos. Quisquam voluptates, quae, quod,
-            doloremque voluptatum quidem quia nemo temporibus quibusdam officia
-            quos.
-          </p>
-        </aside>
       </div>
     </div>
   );

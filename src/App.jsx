@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Programming from "./pages/Programming";
 import Saved from "./pages/Saved";
 import Search from "./pages/Search";
+import Covid from "./pages/Covid";
 
 const App = () => (
   <Router>
@@ -12,6 +13,7 @@ const App = () => (
       <Route path="/" element={<Home />} />
       <Route path="/programming" element={<Programming />} />
       <Route path="/saved" element={<Saved />} />
+      <Route path="/covid" element={<Covid />} />
       <Route path="/search" element={<Search />} />
     </Routes>
   </Router>
